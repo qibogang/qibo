@@ -27,8 +27,8 @@ jobs:
           if [[ "${{ github.event_name }}" == "tag" ]]; then # TODO: check if it works 
                 echo "version=stable" >> $GITHUB_OUTPUT
           fi 
-  
-          
+
+
   # TODO: this is a debugging job, delete it 
   generate-docs:
     needs: [evaluate-label]
@@ -36,6 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{needs.evaluate-label.outputs.label}} 
+
 
   deploy-docs:
     needs: [evaluate-label]
