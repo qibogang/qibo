@@ -9,7 +9,6 @@ on:
         - '*'
 
 
-
 jobs:
   evaluate-label:
     runs-on: ubuntu-latest
