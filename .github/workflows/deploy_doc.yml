@@ -30,7 +30,6 @@ jobs:
           fi 
 
 
-
   deploy-docs:
     needs: [evaluate-label]
     uses: qibogang/workflows/.github/workflows/deploy-ghpages-latest-stable.yml@versions
