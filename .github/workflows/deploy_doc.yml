@@ -29,7 +29,6 @@ jobs:
                 echo "version=stable" >> $GITHUB_OUTPUT
           fi 
           
-          
   deploy-docs:
     needs: [evaluate-label]
     if: needs.evaluate-label.outputs.label != 'Error'
