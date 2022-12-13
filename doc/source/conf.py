@@ -16,16 +16,15 @@ import sys
 from recommonmark.transform import AutoStructify
 
 sys.path.insert(0, os.path.abspath(".."))
-import qibo
 
 # -- Project information -----------------------------------------------------
 
-project = "Qibo"
+project = " "
 copyright = "2020-2022 by the Qibo team"
 author = "The Qibo team"
 
 # The full version, including alpha/beta/rc tags
-release = qibo.__version__
+release = " "
 
 
 # -- General configuration ---------------------------------------------------
@@ -111,6 +110,6 @@ def setup(app):
     app.add_css_file("css/style.css")
 
 
-html_logo = "logo.png"
+#html_logo = "logo.png"
 
 html_show_sourcelink = False
